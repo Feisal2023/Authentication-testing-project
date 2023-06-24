@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/style.css">
+  <title>Posts</title>
+</head>
+<body>
+  <div class="container">
+    <div class="logout-icon" id="logout-icon">
+      <button><a href="signin.html">logout</a>
+      <i class="fa fa-sign-out" aria-hidden="true"></i></button>
+    </div>
+    <div id="login-message"></div>
+ <form class="form" id="form">
+      <div class="form-header">
+        <h1>Create a New Post</h1>
+      </div>
+   <div class="control-form">
+    <input type="text" id="imgUrl" class="imgUrl" placeholder="Image url">
+    <small>Error Message</small>
+   </div>
+   <div class="control-form">
+    <input type="text" id="title" class="title" placeholder="Title">
+    <small>Error Message</small>
+   </div>
+   <div class="control-form">
+  <textarea  id="article" cols="35" rows="10" placeholder="Article"></textarea>
+  <small>Error Message</small>
+   </div>
+   <button type="submit" class="addPost">Add post</button>
+    </form>
+    <div id="posts" class="posts"></div>
+  </div>
+  <script src="js/posts.js"></script>
+</body>
+</html>
