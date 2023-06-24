@@ -128,7 +128,7 @@ function addAccountToStorage() {
     inputsFromStorage.push(inputs);
     localStorage.setItem('inputs', JSON.stringify(inputsFromStorage));
     // after account successfully added to local storage navigate to signin page automatically
-    window.location.href = "signin.html";
+    window.location.href = "index.html";
   }
 }
 // clearInput when thier are no error messages
